@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.PayScreen"
-    android:background="#FFB6C1">
+    android:background="#FFC107">
 
     <ImageView
         android:id="@+id/done"
