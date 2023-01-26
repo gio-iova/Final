@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeScreen_to_forgotPassword"
             app:destination="@id/forgotPassword" />
+        <action
+            android:id="@+id/action_homeScreen_to_blankFragment"
+            app:destination="@id/blankFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginScreen"
@@ -25,8 +28,8 @@
             android:id="@+id/action_loginScreen_to_homeScreen"
             app:destination="@id/homeScreen" />
         <action
-            android:id="@+id/action_loginScreen_to_itemsListScreen"
-            app:destination="@id/itemsListScreen" />
+            android:id="@+id/action_loginScreen_to_blankFragment"
+            app:destination="@id/blankFragment" />
     </fragment>
     <fragment
         android:id="@+id/forgotPassword"
@@ -41,11 +44,7 @@
         android:id="@+id/itemsListScreen"
         android:name="com.iovashvili.finalapp.fragments.ItemsListScreen"
         android:label="fragment_items_list_screen"
-        tools:layout="@layout/fragment_items_list_screen" >
-        <action
-            android:id="@+id/action_itemsListScreen_to_detailsScreen"
-            app:destination="@id/detailsScreen" />
-    </fragment>
+        tools:layout="@layout/fragment_items_list_screen" />
     <fragment
         android:id="@+id/detailsScreen"
         android:name="com.iovashvili.finalapp.fragments.DetailsScreen"
@@ -72,6 +71,23 @@
         <argument
             android:name="shopItem"
             app:argType="com.iovashvili.finalapp.model.ShopListItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.iovashvili.finalapp.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.iovashvili.finalapp.fragments.MyFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_detailsScreen"
+            app:destination="@id/detailsScreen" />
+        <action
+            android:id="@+id/action_blankFragment_to_homeScreen"
+            app:destination="@id/homeScreen" />
     </fragment>
 
 </navigation>

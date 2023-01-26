@@ -1,11 +1,20 @@
-# Final
-ჩვენს მიერ შექმნილი აპლიკაცია წარმოადგენს ონლაინ მაღაზიის მოდელს,რომლის მთვარი მიზანია გაამარტივოს
-კომუნიკაცია მომხმარებელსა და მაღაზიას შორის. ასევე, შესაძლებელი გახადოს 
-სასურველი ნივთების, ბრენდებისა და ნიმუშების  მარტივად პოვნა. შექმნილი აპლიკაცია მომხმარებლებს აძლევს საშუალებას,
-რომ იშოპინგონ კომფორტულად სახლიდან ზედმეტი დროის დახარჯვის გარეშე.
-ჩვენ ვთავაზობთ მომხმარებელს კონკრეტული მაღაზიის პროდუქციას  ტიპის, ფასის, დიზიაინისა და სხვა კრიტერიუმების მიხედვით.
-მომხმარებელს ერთადერთი რაც ევალება, არის ვალიდური E-mail-ის ქონა წარმატებული რეგისტრაციისთვის.
-თავდაპირველად, რეგისტრირდება როგორც იუზერი და იღებს შესაძლებლობას, დაათვალიეროს სხვადასხვა
-ტიპის ნივთები, შეარჩიოს სასურველი და შეიძინოს. თითოეულ პროდუქტს აქვს დასახელება, აღწერა, ფასი. 
-მიუხედავად იმისა,რომ ბაზარზე არსებობს მსგავსი პროექტები,ჩვენი პროექტი  საკმაოდ მნიშვნელოვან როლს ასრულებს თანამედროვე
-მსოფლიოში.
+
+#Shopping Application
+This is a simple shopping application that helps users to shop  easily without leaving home. It is built using Kotlin and Android Studio.
+
+##Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+###Instaling
+Clone the repository
+Open the project in Android Studio
+Add your Firebase configuration file to the project
+Build and run the project on a device or emulator
+
+##Used Technologies
+ViewPager
+Fragments
+NavigationComponents
+Recycler View
+ViewBinding
+

@@ -33,7 +33,7 @@ class LoginScreen : Fragment() {
                     binding.passwordET.text.toString()
                 ).addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        findNavController().navigate(LoginScreenDirections.actionLoginScreenToItemsListScreen())
+                        findNavController().navigate(LoginScreenDirections.actionLoginScreenToBlankFragment())
                     } else {
                         Log.e("AUTH", "Error signing in", task.exception);
                         Toast.makeText(context, task.exception?.message, Toast.LENGTH_SHORT).show()

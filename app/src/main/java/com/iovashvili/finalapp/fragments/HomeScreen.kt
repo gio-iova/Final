@@ -21,6 +21,9 @@ class HomeScreen : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
+
+
         binding = FragmentHomeScreenBinding.inflate(layoutInflater)
         auth = Firebase.auth
         binding.loginTV.setOnClickListener {

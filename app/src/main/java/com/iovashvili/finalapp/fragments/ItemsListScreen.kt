@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.iovashvili.finalapp.adapter.ShoppingListAdapter
 import com.iovashvili.finalapp.databinding.FragmentItemsListScreenBinding
@@ -24,9 +26,11 @@ class ItemsListScreen : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         Log.e("AUTH", "LOGGED")
+
+
         val adapter = ShoppingListAdapter(mutableListOf(), onClick = {
             findNavController().navigate(
-                ItemsListScreenDirections.actionItemsListScreenToDetailsScreen(
+                MyFragmentDirections.actionBlankFragmentToDetailsScreen(
                     it
                 )
             )
@@ -55,6 +59,8 @@ class ItemsListScreen : Fragment() {
 
         binding.itemsRV.layoutManager = LinearLayoutManager(context)
         binding.itemsRV.adapter = adapter
+
+
 
         return binding.root
     }
